@@ -39,7 +39,7 @@ export default function Index({ tasks }: Props) {
 
     const handleDelete = (id: number, title:string) => {
         if(confirm(`Do you want to delete this task? id: ${id}; name: ${title}`)) {
-            destroy(route('items.destroy', id));
+            destroy(route('tasks.destroy', id));
         }
     }
     return (
